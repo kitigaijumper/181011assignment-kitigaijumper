@@ -1,4 +1,4 @@
-# coding: utf-8
+﻿# coding: utf-8
 
 '''
 演習課題「おみくじを作ろう」
@@ -21,7 +21,12 @@
 # おみくじプログラム
 
 import random
-line = input().rstrip()
+import sys
+line = input().rstrip().split(",")
+print(line)
+num = len(line)
+omikuji = random.randrange(num)
+print(line[omikuji])
 
 # 今回は自力で全部書いてみよう！
 
